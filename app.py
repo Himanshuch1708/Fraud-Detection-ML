@@ -41,7 +41,7 @@ cursor.close()
 conn.close()
 
 
-d = df.drop("Time", axis=1)
+df = df.drop("Time", axis=1)
 
 # Separate the features from the target
 X = df.iloc[:, :-1]  # all features
